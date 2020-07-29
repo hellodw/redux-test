@@ -30,3 +30,9 @@ export default function createItemsLogic(name) {
 
   return { add, remove, edit, reducer };
 }
+
+// 이거슨 덕스패턴(리덕스패턴이 귀찮아서 만들어짐)이고 규칙은 아래와 같다.
+// 연관된 액션 타입, 액션 생성자 함수, 리듀서 함수를 하나의 파일로 작성한다.
+// 리듀서 함수는 export default 키워드로 내보낸다.
+// 액션 생성자 함수는 export 키워드로 내보낸다.
+// 액션 타입은 접두사와 액션 이름을 조합해서 만든다.
